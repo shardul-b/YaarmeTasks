@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="double-tick.svg"
+   id="svg8"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 50.000000 50.000000"
+   height="50.000000pt"
+   width="50.000000pt"
+   version="1.0">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg8"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="33.333333"
+     inkscape:cx="9.4795539"
+     inkscape:zoom="8.07"
+     showgrid="false"
+     id="namedview10"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     style="fill:#00fff2;fill-opacity:1"
+     id="g6"
+     stroke="none"
+     fill="#000000"
+     transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)">
+    <path
+       style="fill:#00fff2;fill-opacity:1"
+       id="path2"
+       d="M245 270 l-118 -141 -53 52 c-42 42 -56 51 -66 41 -10 -10 2 -26 52 -77 35 -36 67 -65 71 -65 12 0 252 292 253 308 3 40 -31 11 -139 -118z" />
+    <path
+       style="fill:#00fff2;fill-opacity:1"
+       id="path4"
+       d="M356 271 c-73 -88 -122 -138 -130 -135 -23 9 -29 -16 -10 -37 9 -10 20 -19 25 -19 12 0 252 291 253 308 3 40 -31 11 -138 -117z" />
+  </g>
+</svg>

@@ -1,0 +1,385 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   /*background-color: #DDDDDD;*/
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+}
+.main-container {
+  display: flex;
+  background: #DDDDDD;
+}
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.ul {
+  font-size: 0.8rem;
+}
+.contacts-panel {
+  width: 30%;
+  background: #FFF;
+}
+.contacts-panel .app-title-section {
+  background-color: #44C3B8;
+  color: #FFF;
+  position: sticky;
+  top:0;
+  height:8%;
+}
+.contacts-panel .app-title-section .container {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.contacts-panel .app-title-section .container .message-icon {
+  background: url('Icons/message.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2em;
+  height: 2em;
+  width: 2em;
+}
+.contacts-panel .app-title-section .container .app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contacts-panel .arrow-extra {
+  width: 100%;
+  position: sticky;
+  /*border:1px solid red;*/
+  top:0;
+  background: #FFF;
+  height:8%;
+}
+.contacts-panel .arrow-extra .container {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: flex;
+}
+.contacts-panel .arrow-extra .container .chats-down {
+  color: #000;
+  font-size: 1.4rem;
+}
+.contacts-panel .arrow-extra .container .down-arrow {
+  background: url('Icons/arrow-down.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2em;
+  height: 2em;
+  width: 2em;
+}
+.contacts-panel .search-box-container {
+  width: 100%;
+  position: sticky;
+  top:0;
+  height:10%;
+  background: #FFF;
+}
+.contacts-panel .search-box-container .container{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.contacts-panel .search-box-container .container #search {
+  width: 100%;
+  padding: 0.8em 0.3em 0.8em 0.3em;
+  border-radius: 5px;
+  border:1px solid #DDDDDD;
+}
+.contacts-panel .contacts-container {
+  width: 100%;
+  overflow-x: hidden;
+  /*border:1px solid darkgreen;*/
+  position: relative;
+  overflow-y: scroll;
+  height: 61%;
+}
+.contacts-panel .contacts-container .container {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.contacts-panel .contacts-container .container .chat-container {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 0.2em;
+  padding-top: 0.1em;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-panel .contacts-container .container .chat-container .image-container {
+  width: 3em;
+  height: 3em;
+}
+.contacts-panel .contacts-container .container .chat-container .image-container img {
+  border-radius: 50%;
+}
+.contacts-panel .contacts-container .container .chat-container .profile-details {
+  width: 80%;
+}
+.contacts-panel .contacts-container .container .chat-container .profile-details .name-unread {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts-panel .contacts-container .container .chat-container .profile-details .name-unread .unread-count {
+  background-color: #26A59A;
+  color: #FFF;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  text-align: center;
+}
+.contacts-panel .contacts-container .container .chat-container .profile-details .message-time-div {
+  padding-top: 0.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.display-message{
+  color:#;
+  display: flex;
+}
+.chat-section {
+  width: 70%;
+  background-color: #DDDDDD;
+}
+.chat-section .chat-title {
+  background-color: #26A59A;
+  color: #FFF;
+  height: 8%;
+  position: sticky;
+  top:0;
+}
+.chat-window{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 77.5%;
+  /*border:1px solid red;*/
+}
+.chat-section .chat-title .container {
+  padding-top: 0.8em;
+  padding-bottom: 0.7em;
+  display: flex;
+  justify-content: space-between;
+}
+.chat-section .chat-title .container .reciever-info {
+  display: flex;
+  align-items: center;
+}
+.chat-section .chat-title .container .sender-info {
+  display: flex;
+  align-items: center;
+}
+.chat-section .chat-title .container .sender-name{
+  margin-right:0.5em;
+}
+.chat-section .chat-title .container .reciever-name{
+  margin-left:0.5em;
+}
+.sender-image-container {
+  height: 2.5em;
+  width: 2.5em;
+}
+.sender-image-container .sender-image {
+  border-radius: 50%;
+}
+.reciever-image-container {
+  height: 2.5em;
+  width: 2.5em;
+}
+.reciever-image-container .reciever-image {
+  border-radius: 50%;
+}
+
+.sender {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.reciever {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sender-message {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+  background: #000;
+  color: #FFF;
+  margin-right:0.5em;
+}
+.reciever-text {
+  margin-top: 1em;
+  margin-left:0.5em;
+  align-self: center;
+  padding: 0.5em;
+  border-radius: 5px;
+  background: #FFF;
+  color: #000;
+}
+.sender-time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  margin-bottom: 4.2em;
+  width:95%;
+}
+.reciever-time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.15em;
+}
+.recieve{
+  width:18%;
+  justify-content:  flex-end;
+}
+.recieve-time-div{
+  width:48%;
+}
+.sent-tick {
+  background: url('Icons/double-tick.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  height: 1em;
+  width: 1em;
+}
+.time {
+  font-style: italic;
+  font-size: 0.5rem;
+  color: darkgray;
+  /*margin-bottom: 6.82em;*/
+}
+.message-box-container {
+  width: 100%;
+  height: 5%;
+  position: sticky;
+  bottom:1em;
+}
+.message-box-container .container{
+  padding: 0.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+}
+.message-box-container .emoji {
+  background: #DDDDDD;
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  padding-top: 0.1em;
+  padding-left: 0.5em;
+}
+.message-box-container .emoji .emoji-icon {
+  background: url('Icons/emoji.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.2em;
+  height: 1.2em;
+  width: 1.2em;
+  border: none;
+}
+.message-box-container .message-input {
+  width: 80%;
+  border-radius: 5px;
+  padding: 0.3em;
+  border: 1px solid #DDDDDD;
+}
+.message-box-container .clip {
+  background: #DDDDDD;
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  padding-top: 0.2em;
+  padding-left: 0.5em;
+}
+.message-box-container .clip .clip-icon {
+  background: url('Icons/pin.svg');
+  transform: rotate(-35deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.2em;
+  height: 1.2em;
+  width: 1.2em;
+  border: none;
+}
+.message-box-container .mic {
+  background: #DDDDDD;
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  padding-top: 0.2em;
+  padding-left: 0.5em;
+}
+.message-box-container .mic .mic-icon {
+  background: url('Icons/mic.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.2em;
+  height: 1.2em;
+  width: 1.2em;
+  border: none;
+}
+.message-box-container .send {
+  background: #26A59A;
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  padding-top: 0.2em;
+  padding-left: 0.5em;
+}
+.message-box-container .send .send-icon {
+  background: url('Icons/send.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.2em;
+  height: 1.2em;
+  width: 1.2em;
+  border: none;
+}
+.button-container{
+  position: relative;
+  height:5%;
+  width:100%;
+  padding-top:0.6em;
+  position: sticky;
+  bottom: 1em;
+}
+.new-button{
+  background:#26A59A;
+  width:100%;
+  /*display: block;*/
+  color:#FFF;
+  
+  padding: 0.8em 0.3em 0.8em 0.3em;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.video-icon{
+  background: url('Icons/video-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:1em;
+  height:1em;
+  width:1em;
+}
+.camera-icon{
+  background: url('Icons/camera.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:1em;
+  height:1em;
+  width:1em;
+}

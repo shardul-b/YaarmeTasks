@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>Login</title>
+</head>
+<body>
+	<div class="login-form">
+		<div class="buttons-container flex">
+			<button class="up-button" onclick="signup()">Sign up</button>
+			<button class="in-button" onclick="signin()">Sign in</button>
+		</div>
+		<div class="container">
+			<form class="login">
+				<label for='email'>Username, Email or Contact Number</label>
+				<input type="text" id="email" required="true" autocomplete='off' >
+				<label for='password'>Password</label>
+				<input type="password" id="password" required="true" autocomplete='off' >
+				<button class="signin">Submit</button>
+			</form>
+			<span class="social">OR</span>
+			<div class="social-buttons flex-space">
+				<button class='social-media google'>Google</button>
+				<button class="social-media facebook">Facebook</button>
+				<button class="social-media twitter">Twitter</button>
+			</div>
+		</div>
+	</div>
+	<div class="register-form hide">
+		<div class="buttons-container flex">
+			<button class="up-button" onclick="signup()">Sign up</button>
+			<button class="in-button" onclick="signin()">Sign in</button>
+		</div>
+		<div class="container">
+			<form class="register">
+				<!-- name tab -->
+				<div class="tab hide">
+					<div class="name flex-space">
+						<div class="fname">
+							<label for='fname'>First name</label>
+							<input type="text" id="fname" required="true" autocomplete='off' >
+						</div>
+						<div class="lname">
+							<label for='lname'>Last name</label>
+							<input type="text" id="lname" required="true" autocomplete='off'>
+						</div>
+					</div>
+				</div>
+				<!-- DOB TAB -->
+				<div class="tab hide">
+					<label for='dob'>Date of Birth</label>
+					<input type="date" id="dob" required="true" autocomplete='off' >
+				</div>
+				<div class="tab hide">				
+					<label for='username'>Username</label>
+					<input type="text" id="username" required="true" autocomplete='off' >
+
+					<label for='newpassword'>Password</label>
+					<input type="password" id="newpassword" required="true" autocomplete='off' >
+				<button class='optional flex'><span class="down-icon"></span><span class="up-icon hide"></span>Optional fields</button>
+
+				<div class="optional-content hide">
+					<label for='alt-email' class="flex">Email</label>
+					<input type="email" id="alt-email" autocomplete='off' >
+
+					<label for='alt-contact'>Phone</label>
+					<input type="tel" id="alt-contact" autocomplete='off' >
+					
+					<label for='location'>Location</label>
+					<input type="text" id="location" autocomplete='off' >
+					
+					<label for="school">School</label>
+					<input type="text" id="school" autocomplete='off' >
+					<label for="college">College</label>
+					<input type="text" id="college" autocomplete='off' >
+					
+					<label for="work">Work</label>
+					<input type="text" id="work" autocomplete='off' >
+
+					<label for="skills">Skills</label>
+					<div class="skills-box flex-space">
+						<input type="text" id="skills" autocomplete='off' >
+						<span class="skills-intro">+</span>
+					</div>
+					<div class="skills">
+
+					</div>
+				</div>
+					<button class="signin">Submit</button>
+			</div>
+			<button class="next signin">Next<span class="next-icon"></button>	
+			</form>
+		</div>
+	</div>
+	<div id='preload'>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

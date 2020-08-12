@@ -1,0 +1,542 @@
+@font-face{
+    src: url("../Lato/Lato-Regular.ttf");
+    font-family: myFont;
+}
+@font-face{
+    src: url("../Lato/Lato-Bold.ttf");
+    font-family: myFont;
+    font-weight: bold;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: myFont;
+}
+body{
+    background-color: whitesmoke;
+}
+.flexonly{
+    display: flex;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color:#555555;
+}
+.hide{
+    display: none;
+}
+.visible{
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+}
+/*Comment Section*/
+.comment-container{
+    width: 95%;
+    margin: 0 auto;
+}
+.reaction{
+    display: block;
+    padding: 0.5em 0;
+}
+.comment-section{
+    border-top:0.1em solid #DDD; 
+}
+.comment-section span{
+    display: block;
+}
+.comment-image-container{
+    width: 2.5em;
+    height: 2.5em;
+}
+.comment-image-container + .comment-image-container{
+    margin-left: 1em;
+}
+.comment-image,.commenter-image,.reply-image{
+    border-radius: 50%;
+}
+.comment-like{
+    background: url('Icons/like.svg');
+}
+.comment-insight{
+    background: url('Icons/insight.svg');
+}
+.more-image{
+    border:2px solid gray;
+    border-radius: 50%;
+}
+.more-dots-icon{
+    background: url('Icons/more.svg');
+    background-size: 1.5em;
+    margin: 0.1em auto;
+    border-radius:50%;
+    transform: rotate(90deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height:2em;
+    width:2em;
+}
+.comment-icons{
+    position: relative;
+    top: -1.3em;
+    right: -1.3em;  
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:1.5em;
+    width:1.5em; 
+}
+.double-arrow{
+    background: url('Icons/double-arrow.svg');
+    background-size: 1.2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:1.2em;
+    width:1.2em;
+}
+.commenter-image-container{
+    height: 2.5em;
+    width:2.5em;
+    margin-right: 0.5em;
+}
+.reply-image-container{
+    height:2em;
+    width:2em;
+    margin-right: 0.5em;
+}
+.comment-details{
+    border-radius: 0 20px 20px 20px;
+    width:90%;
+    background: #F3F6F8;   
+}
+.comments,.reaction{
+    font-size: 0.9rem;
+}
+.comment{
+    width:95%;
+    padding:0.5em;
+}
+.comment-comment{
+    padding:0.5em 0;
+}
+.comment-rank,.comment-description,.comment-time,.reply-section,.like-section{
+    font-size: 0.75rem;
+    color:gray;
+}
+.dots-more-icon{
+    background: url('Icons/more.svg');
+    filter: invert(40%);
+    margin-top: 0.5em;
+    margin-right:0.5em; 
+    justify-content:flex-end;
+    align-self: flex-start;
+    background-size: 1.1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:1.5em;
+    width:1.5em;
+}
+.name-dot{
+    background: url('Icons/dot.svg');
+    align-self: center;
+    background-size: 0.3em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:1em;
+    width:1em;
+}
+.comment-icons-tray{
+    width:90%;
+    margin-left:auto;
+    padding: 0.5em 0;
+}
+.comment-icons-tray-reply{
+    padding: 0.5em 0;
+    width:80%;
+    margin-left:auto;
+}
+.reply-section{
+    align-items: center;
+    padding: 0 0.5em;
+    border-left: 1px solid #DDD;
+}
+.comment-name-rank{
+    align-items:center; 
+}
+.like-section{
+    align-items: center;
+    padding: 0 0.5em;
+}
+.comment-like-icon{
+    background-image: url("Icons/like-icon.svg");
+    transform: scaleX(-1);
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:1em;
+    width:1em;
+}
+.comment-reply-icon{
+    background-image: url("Icons/comment.svg");
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:1.2em;
+    width:1em;
+}
+.replier{
+    margin-left:auto;
+    width:90%;
+}
+.mention{
+    color:#0073b1;
+    font-weight: bold;
+}
+.comment-head{
+    align-items: center;
+    padding: 1em 0;
+}
+.comment-head span{
+    display: inline-block;
+}
+.filter{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.relevant{
+    font-size: 0.9rem;
+    font-weight: bold;
+    width:90%;
+    cursor: pointer;
+    text-align: right;
+}
+/*Comment end*/
+.previous{
+    font-weight: bold;
+    padding: 0.8em 0;
+    font-size: 0.8rem;
+    width:90%;
+    margin-left:auto; 
+    cursor: pointer;
+}
+.icon{
+    width: 2.75em;
+    height: 2.75em;
+    background-size: 2.4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("Icons/linkedin.svg");
+    cursor: pointer;
+    display: block;
+}
+/*Header*/
+.mobile-header{
+    background-color: #0073b1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.25em 0em;
+    justify-content: space-between;
+    align-items: center;
+}
+.back-icon{
+    background-image: url("Icons/back.svg");
+    background-size: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:2em;
+    width:2em;
+}
+.dots-icon{
+    background-image: url("Icons/more.svg");
+    filter: invert(100%);
+    background-size: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:2em;
+    width:2em;
+}
+/*Bottom*/
+.mobile-nav-bar{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #bbb;
+    width: 100%;
+    padding:0.5em 0;
+}
+.personal-image-container{
+    width:2em;
+    height:2em;
+}
+.personal-image{
+    border-radius: 50%;
+}
+.at-icon{
+    background-image: url("Icons/at.svg");
+    filter: invert(40%);
+    background-size: 1.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:2em;
+    width:2em;
+}
+.post{
+    padding: 0.3em 1em;
+    font-size:0.9rem;
+    font-weight: bold;
+    color:#0073B1; 
+    background: 0;
+    border:0;
+}
+.comment-write{
+    padding-top: 1em;
+}
+.tags-container{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    scrollbar-width:none;
+}
+.tag{
+    flex-shrink: 0;
+    background: #F1F1F1;
+    padding: 0.3em 0.5em;
+    font-weight: bold;
+    border-radius: 15px;
+    white-space: no-wrap;
+    cursor: pointer;
+}
+.tag + .tag{
+    margin-left: 1em;
+}
+.comment-input{
+    margin-left: 0.5em;
+    width:65%;
+    border:0;
+}
+.container{
+    width: 75%;  
+    display: flex;
+    justify-content: space-between;
+    margin: auto; 
+}
+.card{
+    background-color: white;
+    border: 1px solid rgb(194, 194, 194);
+    box-shadow: 0px 1px 2px 1px #ddd;
+    margin-bottom: 1em;
+    position: relative;
+}
+.follow-conn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+    margin-top: 1em;
+}
+.follow-icon{
+    width: 3.25em;
+    height: 3.25em;
+}
+.users{
+    width: 2.75em;
+    height: 2.75em;
+}
+.conn-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+    margin-right: auto;
+    font-size: 1em;
+    width: 48%;
+}
+.name-info{
+    margin-left: 0.25em;
+    font-weight: normal;
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 0.85em !important;
+}
+.globe-icon{
+    background-image: url("Icons/globe.svg");
+}
+.follow{
+    padding: 0.5em 0.85em;
+    background-color: white;
+    font-size: 0.95em;
+    border: none;
+    color: #0073b1;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.follow:hover{
+    background-color: #f1faff;
+}
+.content{
+    text-align: justify;
+    font-size: 0.85em;
+    margin-top: 0.75em;
+    padding: 0em 1em;
+}
+.see-more{
+    color: gray;
+    padding-left: 0.5em;
+    cursor: pointer;
+}
+.see-more:hover{
+    text-decoration: underline;
+}
+.card-image{
+    margin-top: 1em;
+    width: 100%;
+}
+.website-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75em;
+    color: black;
+    font-size: 0.85em;
+    background-color: whitesmoke;
+}
+.web-content{
+    display: flex;
+    flex-direction: column;
+}
+.web-content span{
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: gray;
+}
+.view-arrow{
+    display: block;
+    width: 0.6em;
+    height: 0.6em;
+    border-top: 1.5px solid gray;
+    border-left: 1.5px solid gray;
+    transform: rotate(135deg);
+    margin-right: 0.5em;
+}
+.vote-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 0.75em;
+    border-bottom: 1px solid #ddd;
+}
+.vote-section .icon{
+    font-size: 0.7em;
+}
+.like-icon{
+    background-image: url("Icons/like.svg");
+    transform: scaleX(-1);
+}
+.info-icon{
+    background-image: url("Icons/insight.svg");
+}
+.love-icon{
+    background-image: url("Icons/love.svg");
+    transform: scaleX(0.9);
+}   
+.votes{
+    padding: 0 0.5em;
+}
+.share-section{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icon-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9em;
+    padding: 0.25em;
+    padding-right: 0.75em;
+    margin-right: 0.5em;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.icon-wrap:hover{
+    background-color: #ddd;
+}
+.icon-wrap .icon{
+    font-size: 0.6em;
+    margin-right: 0.5em;
+}
+.like-i{
+    background-image: url("Icons/like-icon.svg");
+    transform: scaleX(-1);
+}
+.comment-icon{
+    background-image: url("Icons/comment.svg");
+}
+.share-icon{
+    background-image: url("Icons/share.svg");
+}
+.send-icon{
+    background-image: url("Icons/send.svg");
+}
+
+
+@media only screen and (min-width:650px){
+    *{
+        display: none;
+    }
+}
+@media only screen and (max-width:1000px){
+    .container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:650px){
+    .container-wrap{
+        padding: 0;
+    }
+    .container{
+        margin-top: 2.5em;
+        margin-bottom: 4.8em;
+    }
+    .share-section{
+        justify-content: space-between;
+        padding: 0;
+        font-size: 0.95em;
+    }
+    .vote-section span:last-of-type{
+        margin-left: auto;
+        margin-right: 0.75em;
+    }
+    .icon-wrap{
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 0.25em;
+        padding-top: 0.65em;
+        padding-bottom: 0.75em;
+        margin: 0;
+        flex: 1;
+    }
+}
+@media only screen and (max-width:500px){
+    .container{
+        font-size: 0.95em;
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Side Menu -->
+	<div class="menu-side hide">
+        <!-- Profile Section -->
+        <div class="profile-details-menu">
+            <div class="container-side">
+            <!-- Image and Theme-->
+                <div class="profile-image-mode flex-space">
+                    <div class="profile-container">
+                        <a href="#"><img src="Images/john.jpg" class="profile-img"></a>
+                    </div>
+                    <button class="moon"></button>
+                </div>
+                <!-- Phone and arrows -->
+                <div class="profile-details-info flex-space">
+                    <div class="name-phone">
+                        <span class="name">Alex B</span>
+                        <span class="phone">+91 1234567891</span>
+                    </div>
+                    
+                    <button class="down-arrow"></button>
+                </div>
+            </div>
+        </div>
+        <!-- Sub menu -->
+        <div class="sub-side-menu hide">
+            <div class="container-side">
+                <!-- Profile section -->
+                <div class="sub-side-menu-profile flex">
+                    <div class="sub-profile-container">
+                        <img src="Images/john.jpg" class="sub-profile-img">
+                    </div>
+                    <span class="sub-profile-name">Alex B</span>
+                </div>
+                <div class="sub-side-menu-object menu-side-object">
+                    <span class="plus">+</span>
+                    <span class="menu-side-object-text">Add Account</span>
+                </div>
+            </div>
+        </div>
+        <!-- Options -->
+        <div class="menu-side-options">
+            <div class="container-side">
+                <div class="menu-side-object">
+                    <span class="group"></span>
+                    <a href="#" class="menu-side-object-text">New Group</a>
+                </div>
+                <div class="menu-side-object">
+                    <span class="secret-chat"></span>
+                    <a href="#" class="menu-side-object-text">New Secret Chat</a>
+                </div>
+                <div class="menu-side-object">
+                    <span class="announce"></span>
+                    <a href="#" class="menu-side-object-text">New Channel</a>
+                </div>
+                <div class="menu-side-object">
+                    <span class="contacts"></span>
+                    <a href="#" class="menu-side-object-text">Contacts</a>
+                </div>   
+                <div class="menu-side-object">
+                    <span class="phone-call"></span>
+                    <a href="#" class="menu-side-object-text">Calls</a>
+                </div> 
+                <div class="menu-side-object">
+                    <span class="bookmark-menu"></span>
+                    <a href="#" class="menu-side-object-text">Saved Messages</a>
+                </div> 
+                <div class="menu-side-object">
+                    <span class="setting-icon"></span>
+                    <a href="#" class="menu-side-object-text">Settings</a>
+                </div> 
+            </div>
+        </div>
+        <!-- Extra options -->
+        <div class="menu-side-extra-options">
+            <div class="container-side">
+                <div class="menu-side-object">
+                    <span class="person-add"></span>
+                    <a href="#" class="menu-side-object-text">Invite Friends</a>
+                </div> 
+                <div class="menu-side-object">
+                    <span class="help-icon"></span>
+                    <a href="#" class="menu-side-object-text">Telegram FAQ</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar -->
+	<header class="nav">
+        <!-- Mobile Nav -->
+		<div class="container flex header-container flex-space">
+			<button class="nav-toggle flex" id='ham'>
+                <span class="lines-icon"></span>
+            </button>
+            
+			<div class="search-box">
+				<div class="container flex-space">
+					<span class='search-icon'></span>
+					<input type="text" class='search-input' placeholder="Search">
+					<span class='qr-icon'></span>
+				</div>
+			</div>
+			<span class="message-icon"></span>
+		</div>
+        <!-- PC nav -->
+        <div class="header-pc container flex-space">
+            <div class="first-part flex-space">
+                <div class="logo">
+                    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt='logo' class="logo" />
+                </div>
+                <div class="search-box">
+                    <div class="container flex-space">
+                        <span class="search-icon"></span>
+                        <input type="text" class='search-input' placeholder="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="second-part flex-space">
+                <div class="nav-icons flex-space">
+                    <div class="home nav-icon-container flex">
+                        <span class="home-icon"></span>
+
+                    </div>
+                    <div class="community nav-icon-container flex">
+                        <span class="network-icon"></span>
+   
+                    </div>
+                    <div class="jobs nav-icon-container flex">
+                        <span class="suit-icon"></span>
+ 
+                    </div>
+                    <div class="messages nav-icon-container flex">
+                        <span class="message-icon"></span>
+
+                    </div>
+                    <div class="notifications nav-icon-container flex">
+                        <span class="bell-icon"></span>
+                    </div>
+                </div>
+                <div class="profile-container desk">
+                    <a href="#"><img src="Images/john.jpg" class="profile-img"></a>
+                </div>
+                <div class="square-icon flex-space">
+                    <span class="work-icon"></span>
+                    <span class="nav-text">Work</span>
+                </div>
+            </div>
+        </div>
+	</header>
+    <!-- Cover Image -->
+
+    <div class="cover-image-section">
+        <div class="cover-image-container">
+            <img src="Images/cover.jpg" class="cover-image">
+            
+        </div>
+
+    </div>
+    <!-- Profile header -->
+	<div class="profile-header">
+		<div class="container">
+            <div class="image-container">
+                <img src="Images/john.jpg" class="header-image">
+            </div> 
+                <div class="profile-header-details">
+                    <span class="profile-header-name">John Doe</span>
+                    <span class="profile-header-status">SELF LEARNER | WEB DEVELOPER</span>
+                </div>
+		</div>
+	</div>
+    <div class="personal-details">
+        <div class="container">
+            <span class="box-title">About</span>
+            <div class="bio-info flex personal-details-box">
+                <span class="bio-icon"></span>
+                <span class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="location-info flex personal-details-box">
+                <span class="location-icon"></span><span class="info">India</span>
+            </div>
+            <div class="birth-info flex personal-details-box">
+                <span class="cake-icon"></span><span class='info'>10 January 1999</span>
+            </div>
+            <div class="email-info flex personal-details-box">
+                <span class="email-icon"></span><span class='info'> johndoe@gmail.com</span>
+            </div>
+            <div class="phone-info flex personal-details-box">
+                <span class="phone-icon"></span> <span class='info'> 998751234</span>
+            </div>
+        </div>
+    </div>
+    <div class="experience">
+        <div class="container">
+            <span class="box-title">Experience</span>
+            <div class="work flex-space">
+                <div class="edu-image-container">
+                    <img src="Images/work.jpg" class="edu-image">
+                </div>
+                <div class="name-desc flex">
+                    <span class="edu-name">Web Developer Intern</span>
+                    <span class="edu-desc">YaarMe</span>
+                    <span class="time">July 2020 - Present</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="education">
+        <div class="container">
+            <span class="box-title">Education</span>
+            <div class="college flex-space">
+                <div class="edu-image-container">
+                    <img src="Images/iit.png" class="edu-image">
+                </div>
+                 <div class="name-desc flex">   
+                    <span class="edu-name">Indian Institute Of Technology Bombay</span>
+                    <span class="edu-desc">Bachelor of Engineering - BE . Information Technology</span>
+                    <span class="time">2019 - 2022</span>
+                </div>
+            </div>
+            <div class="school flex-space">
+                <div class="edu-image-container">
+                    <img src="Images/school.jpeg" class="edu-image">
+                </div>
+                <div class="name-desc flex">
+                    <span class="edu-name">Podar International</span>
+                    <span class="edu-desc">High School</span>
+                    <span class="time">2010 - 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="container">
+            <span class="box-title">Skills and Interests</span>
+            <div class="skills-box">
+                <div class="tech-languages flex">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">Javascript</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Node</span>    
+                </div>
+            <span class="box-title">Languages Known</span>
+                <div class="languages flex">
+                    <span class="skill">English</span>
+                    <span class="skill">Hindi</span>
+                </div>
+            <span class="box-title">Interests</span>
+                <div class="interests flex">
+                    <span class="skill">Algorithms</span>
+                    <span class="skill">Regular Expressions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="posts-details-container">
+        <div class="posts-details-section flex-space container">
+            <div class="connections-info">
+                <span class="connection-number">50</span>
+                <span class="connection-text">Connections</span>
+            </div>
+            <div class="posts-info">
+                <span class="posts-number">10</span>
+                <span class="posts-text">Posts</span>
+            </div>
+        </div>
+    </div>
+    <div class="post-container">
+        
+    </div>
+    <div class="connections hide">
+        <div class="container">
+            <div class="connection-details flex-space">
+                <div class="connection-container">
+                    <img src="Images/robin.jpg" class="connection-image">
+                </div>
+                <span class="connection-name">Robin Sharma</span>
+                <button class="message-button">Message</button>
+            </div>
+             <div class="connection-details flex-space">
+                <div class="connection-container">
+                    <img src="Images/kendrick.jpg" class="connection-image">
+                </div>
+                <span class="connection-name">Kendrick Lamar</span>
+                <button class="message-button">Message</button>
+            </div>
+             <div class="connection-details flex-space">
+                <div class="connection-container">
+                    <img src="Images/niles.jpg" class="connection-image">
+                </div>
+                <span class="connection-name">Niles Dhar</span>
+                <button class="message-button">Message</button>
+            </div>
+             <div class="connection-details flex-space">
+                <div class="connection-container">
+                    <img src="Images/elizabeth.jpg" class="connection-image">
+                </div>
+                <span class="connection-name">Elizabeth Lawrence</span>
+                <button class="message-button">Message</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-content">
+        <div class="footer-icons container flex-space">
+            <span class="home-icon"></span>
+            <span class="network-icon"></span>
+            <span class="add-icon"></span>
+            <span class="bell-icon"></span>
+            <span class="suit-icon"></span>
+        </div>
+    </footer>
+    <script type="text/javascript" src='script.js'></script>
+</body>
+</html>

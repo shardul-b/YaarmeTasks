@@ -1,0 +1,280 @@
+// CSS file contains the updated code i left this halfway
+@light-green:#44C3B8;
+@dark-green:#26A59A;
+@gray-color:#DDDDDD;
+.dark-green-repeat(){
+	background-color: @dark-green;
+	color:#FFF;
+}
+.light-green-repeat(){
+	background-color: @light-green;
+	color:#FFF;
+}
+.icon-repeat(@size:2em,@h:2em,@w:2em){
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:@size;
+	height:@h;
+	width:@w;
+}
+.flex(){
+	display: flex;
+	justify-content: space-between;
+}
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 0 auto;
+	width:90%;
+}
+.main-container{
+	display: flex;
+}
+img{
+	max-width: 100%;
+	margin:0 auto;
+}
+.message-list{
+	font-size:0.8rem; 
+	list-style-type: none;
+}
+.contacts-panel{
+	width:30%;
+	.app-title-section{
+		.light-green-repeat();
+		.container{
+			display: flex;
+			padding-top:1em;
+			padding-bottom:1em;
+			.message-icon{
+				background:url('Icons/chat.svg');
+				.icon-repeat();
+			}
+			.app-title{
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+		}	
+	}
+	.arrow-extra{
+		width: 100%;
+		.container{
+			padding-top:1.5em;
+			padding-bottom:1.5em;
+			display: flex;
+			.chats-down{
+				color:#000;
+				font-size: 1.4rem;
+			}
+			.down-arrow{
+				background:url('Icons/arrow-down.svg');
+				.icon-repeat();
+			}
+		}
+	}
+	.search-box-container{
+		width: 100%;
+		.container{
+			#search{
+				width:100%;
+				padding:0.8em 0.2em 0.8em 0;
+				border-radius:5px;
+			}
+		}
+	}
+	.contacts-container{
+		width:100%;
+		.container{
+			padding-top:0.5em;
+			padding-bottom:0.5em;
+			.chat-container{
+				border-top:1px solid @gray-color;
+				.flex();
+				.image-container{
+					width:3em;
+					height:3em;
+					img{
+						border-radius:50%;
+					}
+				}
+				.profile-details{
+					width:80%;
+					.name-unread{
+						.flex();
+						align-items:center;
+						.unread-count{
+							.dark-green-repeat();
+							height:1em;
+							width:1em;
+							border-radius:50%;
+							text-align: center;
+						}
+					}
+					.message-time-div{
+						padding-top:0.2em;
+						.flex();
+						align-items:center;
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+}
+.chat-section{
+	width:70%;
+	background-color:@gray-color;
+	.chat-title{
+		.dark-green-repeat();
+		.container{
+			padding-top:0.5em;
+			padding-bottom: 0.5em; 
+			.flex();
+			.reciever-info{
+				border:1px solid red;
+				display: flex;
+				align-items:center;
+				
+			}
+			.sender-info{
+				display: flex;
+				border:1px solid blue;
+				align-items:center;
+			}
+		}
+	}
+}
+.sender-image-container{
+	height: 2.5em;
+	width: 2.5em;
+	.sender-image{
+		border-radius:50%;
+	}
+}
+.reciever-image-container{
+	height: 2.5em;
+	width: 2.5em;
+	.reciever-image{
+		border-radius:50%;
+	}
+}
+li{
+	border:1px solid red;
+}
+.sender{
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+}
+.reciever{
+	display: flex;
+	justify-content: flex-start;
+	align-items:center;
+}
+.sender-message{
+	padding:0.5em;
+	border-radius:5px;
+	background:#000;
+	color:#FFF;
+}
+.reciever-text{
+	padding:0.5em;
+	border-radius:5px;
+	background:#FFF;
+	color:#000;
+}
+.sender-time{
+	display: flex;
+	align-items:center;
+	justify-content: flex-end;
+	text-align: right;
+}
+.reciever-time{
+	display: flex;
+	align-items:center;
+}
+.sent-tick{
+	background:url('Icons/double-tick.svg');
+	.icon-repeat(1em,1em,1em);
+}
+.time{
+	font-style: italic;
+	font-size: 0.5rem;
+	color:darkgray;
+}
+.message-box-container{
+	width: 100%;
+	bottom:1em;
+	padding:0.3em;
+	.flex();
+	align-items:center;
+	background:#FFF;
+	.emoji{
+		background:@gray-color;
+		width: 2em;
+		height:2em;
+		border-radius:5px;
+		padding-top:0.1em;
+		padding-left:0.5em;
+
+		.emoji-icon{
+			background: url('Icons/emoji.svg');
+			.icon-repeat(1.2em,1.2em,1.2em);
+			border:none;
+			
+		}
+	}
+	.message-input{
+		width:80%;
+		border-radius:5px;
+		padding:0.3em;
+		border:1px solid @gray-color;
+	}
+	.clip{
+		background:@gray-color;
+		width: 2em;
+		height:2em;
+		border-radius:5px;
+		padding-top:0.2em;
+		padding-left:0.5em;
+		.clip-icon{
+			background: url('Icons/pin.svg');
+			transform: rotate(-35deg);
+			.icon-repeat(1.2em,1.2em,1.2em);
+			border:none;
+		}
+	}
+	.mic{
+		background:@gray-color;
+		width: 2em;
+		height:2em;
+		border-radius:5px;
+		padding-top:0.2em;
+		padding-left:0.5em;
+		.mic-icon{
+			background: url('Icons/mic.svg');
+			.icon-repeat(1.2em,1.2em,1.2em);
+			border:none;
+		}
+	}
+	.send{
+		background:@dark-green;
+		width: 2em;
+		height:2em;
+		border-radius:5px;
+		padding-top:0.2em;
+		padding-left:0.5em;
+		.send-icon{
+			background: url('Icons/send.svg');
+			.icon-repeat(1.2em,1.2em,1.2em);
+			border:none;
+		}
+
+	}
+}

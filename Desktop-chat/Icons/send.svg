@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="send.svg"
+   id="svg6"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 32.000000 32.000000"
+   height="32.000000pt"
+   width="32.000000pt"
+   version="1.0">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg6"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="21.333333"
+     inkscape:cx="21.333333"
+     inkscape:zoom="12.609375"
+     showgrid="false"
+     id="namedview8"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     style="fill:#ffffff"
+     id="g4"
+     stroke="none"
+     fill="#000000"
+     transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)">
+    <path
+       style="fill:#ffffff"
+       id="path2"
+       d="M143 226 l-113 -42 75 -74 c41 -41 77 -72 79 -69 10 10 85 229 78 228 -4 -1 -58 -20 -119 -43z m97 6 c0 -19 -58 -166 -67 -169 -5 -2 -20 8 -33 22 l-24 25 40 43 39 42 -42 -39 -43 -40 -25 24 c-14 13 -24 28 -22 33 3 10 141 65 165 66 6 1 12 -3 12 -7z" />
+  </g>
+</svg>
